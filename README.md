@@ -24,6 +24,11 @@ create a postgres database then fill the .env with your database credentials.
 
 cd into the db folder then run [npm run db] to import the db migrations and to populate your db with the test data.
 
+
+# Starting The server
+
+#### npm start
+
 # Routes
 
 #### Health Check - POST - /api/appointment/health - Body:any JSON
