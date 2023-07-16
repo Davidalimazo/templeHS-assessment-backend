@@ -14,13 +14,13 @@ HOST=
 
 PORT=
 
-DATABASE=templedb
+DATABASE=
 
 USER=
 
 PASSWORD=
 
-create a postgres database with name templedb then fill the .env with your database credentials.
+create a postgres database then fill the .env with your database credentials.
 
 cd into the db folder then run [npm run db] to import the db migrations and to populate your db with the test data.
 
