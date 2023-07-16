@@ -4,14 +4,14 @@
   "description": "",
   "main": "app.ts",
   "scripts": {
-    "start:dev": "npx nodemon",
+    "start": "npx nodemon",
     "dev": "nodemon -L app.ts",
     "lint": "eslint ./src",
     "fix": "eslint ./src --fix",
     "build": "rimraf ./build && tsc",
-    "prod":"npm run build && node build/server.js",
-    "migrate":"npx knex migrate:latest --knexfile src/db/knexfile.ts",
-    "seed":"npx knex seed:run --knexfile src/db/knexfile.ts",
+    "prod": "npm run build && node build/server.js",
+    "migrate": "npx knex migrate:latest --knexfile src/db/knexfile.ts",
+    "seed": "npx knex seed:run --knexfile src/db/knexfile.ts",
     "db": "npm run migrate && npm run seed"
   },
   "keywords": [],
@@ -39,6 +39,7 @@
     "knex": "^2.5.1",
     "mongoose": "^6.9.0",
     "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
     "pg": "^8.11.1"
   }
 }
