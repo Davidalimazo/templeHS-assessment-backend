@@ -10,15 +10,17 @@ create a .env file and fill in the details below:
 
 API_PORT =
 
-HOST=
+DATABASE_URL=
 
-PORT=
+PGDATABASE=
 
-DATABASE=
+PGHOST=
 
-USER=
+PGPASSWORD=
 
-PASSWORD=
+PGPORT=
+
+PGUSER=
 
 create a postgres database then fill the .env with your database credentials.
 
