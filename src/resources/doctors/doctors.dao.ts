@@ -1,5 +1,4 @@
 import db from "../../db/db";
-import { DoctorType } from "./doctors.interface";
 
 class DoctorDAO{
    async getAllDoctors(){
@@ -9,7 +8,7 @@ class DoctorDAO{
     }
     
    async findOne(id:number){
-    const record = await db('doctors').where('id', id).first().returning("*");
+    const record = await db("doctors").where("id", id).first().returning("*");
         return record;
     }
 
@@ -21,15 +20,15 @@ class DoctorDAO{
       //@ts-ignore
         //@ts-ignore
         record.availableSlots.map((slots, idx) => {
-            if (idx == slotIndex) {
+            if (idx === slotIndex) {
               slots.isBooked = true;
             }
           });
 
 
           //@ts-ignore
-          const data = await db("doctors").update('availableSlots', JSON.stringify(record.availableSlots))
-          .where('id', id).returning("*");
+          const data = await db("doctors").update("availableSlots", JSON.stringify(record.availableSlots))
+          .where("id", id).returning("*");
      
              return data;
     }

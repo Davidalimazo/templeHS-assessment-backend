@@ -6,7 +6,7 @@ function ErrorMiddleWare(
 	error:HttpExceptions,
 	req:Request,
 	res:Response,
-	next:NextFunction
+//	next:NextFunction
 ){
 	const status = error.status || 500;
 	const message = error.message || "Something went wrong";

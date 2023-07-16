@@ -1,5 +1,4 @@
 import express, {Application} from "express";
-import mongoose from "mongoose";
 import compression from "compression";
 import cors from "cors";
 import helmet from "helmet";

@@ -5,7 +5,7 @@ appointmentDao
 
 class AppointmentService{
    async createAppointment(dto:AppointmentType){
-      let data = await appointmentDao.createAppointment(dto);
+    const data = await appointmentDao.createAppointment(dto);
       return data;
     }
     async healthCheck(){

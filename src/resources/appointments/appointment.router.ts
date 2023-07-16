@@ -7,4 +7,4 @@ const router = express.Router();
 router.post("/appointment/create", appointmentController.createAppointment)
 router.post("/appointment/health", appointmentController.checkCheck)
 
-export default router;;
+export default router;

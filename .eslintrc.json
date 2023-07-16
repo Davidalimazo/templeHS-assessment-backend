@@ -18,10 +18,6 @@
 		"@typescript-eslint"
 	],
 	"rules": {
-		"indent": [
-			"error",
-			"tab"
-		],
 		"linebreak-style": [
 			"error",
 			"windows"
@@ -30,14 +26,11 @@
 			"error",
 			"double"
 		],
-		"semi": [
-			"error",
-			"always"
-		],
 		"no-console":"warn",
 		"eqeqeq":"warn",
 		"no-extra-semi":"warn",
 		"no-extra-parens":"warn",
-		"no-alert":"warn"
+		"no-alert":"warn",
+		"no-unused-vars":"warn"
 	}
 }

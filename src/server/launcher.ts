@@ -11,8 +11,8 @@ class Launcher {
 	}
 
 	public initServer(){
-		this.server.listen(this.port, ()=>{
-			console.log(`Server is listening on http://localhost/${this.port}`);
+		this.server.listen(this.port, "0.0.0.0", ()=>{
+			console.log(`Server is listening on ${this.port}`);
 		});
 	}
 }
