@@ -6,9 +6,9 @@ This repo contains the server logic for TempleHS.
 
 clone the repo: git clone [url]
 install the dependencies: npm install
-create a .env file and fill in the details below:
+create a .env file in the root directory, create a postgres database then fill the .env variables below with your database credentials:
 
-API_PORT =
+PORT =
 
 DATABASE_URL=
 
@@ -22,17 +22,14 @@ PGPORT=
 
 PGUSER=
 
-create a postgres database then fill the .env with your database credentials.
 
-cd into the db folder then run [npm run db] to import the db migrations and to populate your db with the test data.
-
-
-# Starting The server
+# DB migration, Seeding and starting the Server 
 
 #### npm start
 
 # Routes
 
+#### Health Check - GET - /api/
 #### Health Check - POST - /api/appointment/health - Body:any JSON
 #### Health Check - POST - /api/doctor/health -  Body: any JSON
 #### Get All Doctors - GET - /api/doctor/all
