@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.ts",
   "scripts": {
-    "dev": "npx nodemon",
-    "start": "nodemon -L app.ts",
+    "dev": "npm run db && npx nodemon",
+    "start": "npm run db && nodemon -L app.ts",
     "lint": "eslint ./src",
     "fix": "eslint ./src --fix",
     "build": "rimraf ./build && tsc",
